@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos fazer uma soma!</title>
+
+<style>
+    body {
+        font-family:'Courier New', Courier, monospace;
+        margin: 20px;
+    }
+    input, button {
+    margin: 5px;
+    padding: 8px;
+    }
+</style>
+</head>
+
+<body>
+    <h2>Somando dois números: </h2>
+    
+
+
+<!--Campos de entrada de dados: -->
+<input type="text" id="valor1" placeholder="Por favor, digite um número: ">
+<input type="text" id="valor2" placeholder="Por favor, digite mais um número: ">
+
+
+<button onclick="somar()">TOTAL</button>
+
+
+<!-- Área para exibir o resultado -->
+<p id="resultado"></p>
+
+<script>
+function somar() {
+// Pega os valores dos campos -- 
+
+const n1 = document.getElementById("valor1").value;
+const n2 = document.getElementById("valor2").value;
+
+
+// Convertendo para número parseFloat para não virar string e conseguir obter uma soma real--
+
+const soma = Numer(n1) + Number(n2);
+
+//Exibe o resultado
+document.getElementById("resultado").textContent = 
+        "Resultado da soma: " + soma;
+
+}
+
+
+</script>
+
+</body>
+</html>

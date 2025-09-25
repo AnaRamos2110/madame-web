@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Soma em JavaScript</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  input, button {
+    margin: 5px;
+    padding: 8px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Soma de Dois Números</h2>
+
+<!-- Campos de entrada -->
+<input type="text" id="valor1" placeholder="Digite o 1º número">
+<input type="text" id="valor2" placeholder="Digite o 2º número">
+
+<button onclick="somar()">Somar</button>
+
+<!-- Área para exibir o resultado -->
+<p id="resultado"></p>
+
+<script>
+function somar() {
+    // Pega os valores dos campos
+    const n1 = document.getElementById("valor1").value;
+    const n2 = document.getElementById("valor2").value;
+
+    // Converte para número (Number ou parseFloat)
+    const soma = Number(n1) + Number(n2);
+
+    // Exibe o resultado
+    document.getElementById("resultado").textContent =
+        "Resultado da soma: " + soma;
+}
+</script>
+
+</body>
+</html>
