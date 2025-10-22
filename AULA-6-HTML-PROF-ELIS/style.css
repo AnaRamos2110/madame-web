@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-style: normal;
+    background: #f5f2f2;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .container {
+    background-color: #b3c9dd;
+    width: 960px;
+  }
+  
+  .header {
+    background-color: #f7f3f3;
+    /* display flex para o logo ficar ao lado do menu */
+    display: flex;
+    /* space between para distribuir na horizontal */
+    justify-content: space-between;
+    /* align-items end para deixar no final da altura */
+    align-items: end;
+    /* flex-wrap wrap para para quebrar no celular */
+    flex-wrap: wrap;
+    /* para dar espaço do conteúdo para a borda */
+    padding: 0 10px 10px 10px;
+    height: 70px;
+  
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+  
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px 20px;
+  
+  }
+  
+  
+  
+  .menu a:hover {
+    background-color: rgb(88, 88, 62);
+    color: #fff;
+  }
+  
+  .sobre {
+    background-color: #0bb9ee;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+  }
+  
+  .direito img {
+    max-width: 100%;
+  }
+  
+  .esquerdo {
+   
+    padding: 80px;
+  
+  }
+  
+  
+  
+  .esquerdo p {
+    line-height: 32px; /*linha sob linha */
+    color: #3e03c7;
+  }
+  
+  .esquerdo a {
+    text-decoration: none;
+    color: #ffffffa9;
+    background-color: rgb(49, 49, 55);
+    width: 100px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: block; /*permanece estático*/
+    margin-top: 20px;
+  }
+  
+  .esquerdo a:hover {
+    background-color: rgb(255, 178, 178);
+    color: #3d0f41;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
